@@ -1,0 +1,152 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.toolbar{
+    height : 3rem;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.priority-bar{
+    height : 2.5rem;
+    width:10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+    background-color: darkslategrey;
+}
+.color{
+    background-color: grey;
+    height : 1.6rem;
+    width: 1.6rem;
+    border-radius: 2px;
+
+}
+.action-button-bar{
+    height : 2.5rem;
+    width  : 4.5rem;
+    display :flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    font-size: 2rem;
+    background-color: darkslategrey;
+}
+.action-button-bar > * :hover{
+ background-color: black;
+}
+.lightpink{
+ background-color: lightpink;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.black{
+    background-color: black;
+}
+.modl-cont{
+    display: none;
+    height: 40vh;
+    width: 35vw;
+    border-radius: 2px;
+    margin-top: calc((100vh - 40vh)/2);
+    margin-left : calc((100vw - 35vw)/2);
+   position: absolute;
+} 
+textarea{
+    background-color:#7efff5;
+    height:100%;
+    width:80%;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 2rem;
+
+}
+.ticket-textarea{
+ outline: none;
+}
+.priority-color-cont{
+    background-color: darkslategrey;
+    height: 100%;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.priority-color{
+ height: 2rem;
+ width : 3rem;
+ border-radius:  2px;
+}
+.main-cont{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap : 2rem;
+
+}
+.ticket{
+ background-color: lightblue;
+ height: 12rem;
+ width : 15rem;
+ display: block;
+}
+.p-bar{
+
+    height : 0.5rem;
+
+}
+.t-sno{
+    background-color: #ffb8b8;
+    height : 1rem;
+    font-size: small;
+    
+}
+.ticket-textarea{
+    padding : 2rem;
+    background-color:#ffcccc;
+    height:  calc(100% - 1rem - 0.5rem);
+}
+.border{
+    
+    border : 3px  solid #7efff5 ;
+    border-style:  groove;
+    
+}
+.ticketlock{
+    background-color: #ffcccc;
+    height: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.5rem;
+    font-size: small;
+}
+
+
+@media screen and (min-width : 425px) and (max-width : 768px){
+    .modl-cont{
+        width: 40vw;
+    }
+}
+@media screen and (max-width : 425px) {
+    .modl-cont{
+        width: 80vw;
+        height:  30vh;
+    }
+}
